@@ -1,0 +1,150 @@
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+}
+
+table {
+    font-family: Tahoma;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+thead th {
+    font-size: 11px;
+    text-align: left;
+    color: #186999;
+    font-weight: 400;
+    border-top: none;
+    border-bottom: 2px solid #186999;
+}
+
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tfoot td {
+    font-size: 11px;
+    color: #222222;
+    border-top: 1px solid #186999;
+    border-bottom: none;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody td {
+    font-size: 11px;
+    color: #222222;
+}
+
+tbody td a,
+tbody td span {
+    color: #186999;
+    text-decoration: none;
+    border-bottom: 1px solid #186999;
+}
+
+th,
+td {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+tbody td a:hover {
+    opacity: 0.8;
+}
+
+tbody tr:not(:first-child) td {
+    border-top: 1px solid #dddddd;
+    border-bottom: none;
+}
+
+select {
+    background: #009fe3;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    height: 18px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+option {
+    background: #fff;
+    color: #000000;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.success-status {
+    display: none;
+}
+
+.button {
+    margin-left: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    color: #222222;
+    padding: 7px 11px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    line-height: 1;
+    text-decoration: none;
+}
+
+@media (min-width: 544px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+}
